@@ -1,0 +1,28 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.guessform{
+    display: flex;
+    flex-direction: column;
+}
+.guessform input{
+    border-radius: 5px;
+    font-size: 13px;
+    color: #232323;
+    background-color: rgba(250, 250, 250, 1);
+    line-height: 50px;
+    height: 50px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+button{
+    background-color: #ff7d27;
+    padding-left: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: x-large;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    width: 50%;
+}

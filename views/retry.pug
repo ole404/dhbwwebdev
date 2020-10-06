@@ -1,0 +1,8 @@
+link(rel="stylesheet", href="/style.css")
+h1 Hi #{username}
+p Dein #{lasttry}. Versuch war #{lastnumber}
+p Die gesuchte Zahl war #{higher == true ? "höher": "niedriger"}
+    form.guessform(action="/guess", method="post")
+        label(for="guessed") Neuer versuch
+        input(type="number" name="number" min=1 max=100)
+        button(type="submit") Raten

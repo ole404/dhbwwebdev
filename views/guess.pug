@@ -1,0 +1,7 @@
+link(rel="stylesheet", href="/style.css")
+h2 Hi #{username}
+p Wähle eine Zahl zwischen 1 und 100!
+    form.guessform(action="/guess", method="post")
+        label(for="guessed") Deine Zahl
+        input(type="number" name="number" min=1 max=100)
+        button(type="submit") Raten

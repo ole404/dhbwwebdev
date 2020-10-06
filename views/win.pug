@@ -1,0 +1,18 @@
+link(rel="stylesheet", href="/style.css")
+h2 GOOOIL GEWONNEN!
+p Herzlichen Glückwunsch #{username} du hast gewonnen! Du hast #{lasttry} Versuche benötigt
+hr
+p#feedline
+button#funnybutton Erzähl mir den lustigen Witz
+p#punchline
+script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+script(src="https://code.jquery.com/jquery-3.5.1.min.js")
+script.
+
+    axios.get("https://official-joke-api.appspot.com/jokes/programming/random")
+    .then((res)=>{
+        $("#feedline").text(res.data[0].setup)
+        document.getElementById("funnybutton").addEventListener("click",(event)=>{
+            $("#punchline").text(res.data[0].punchline)
+        })
+    })
